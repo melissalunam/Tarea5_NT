@@ -1,0 +1,151 @@
+digraph ID3_Tree {
+"0" [shape=box, style=filled, label="spore-print-color
+", weight=1]
+"1" [shape=box, style=filled, label="gill-size
+", weight=2]
+0 -> 1 [ label = "<=2.50"];
+"2" [shape=box, style=filled, label="edible
+(1618)
+", weight=3]
+1 -> 2 [ label = "<=0.50"];
+"3" [shape=box, style=filled, label="odor
+", weight=3]
+1 -> 3 [ label = ">0.50"];
+"4" [shape=box, style=filled, label="cap-shape
+", weight=4]
+3 -> 4 [ label = "<=6.50"];
+"5" [shape=box, style=filled, label="habitat
+", weight=5]
+4 -> 5 [ label = "<=2.50"];
+"6" [shape=box, style=filled, label="edible
+(14)
+", weight=6]
+5 -> 6 [ label = "<=5.00"];
+"7" [shape=box, style=filled, label="bruises%3F
+", weight=6]
+5 -> 7 [ label = ">5.00"];
+"8" [shape=box, style=filled, label="poisonous
+(95)
+", weight=7]
+7 -> 8 [ label = "<=0.50"];
+"9" [shape=box, style=filled, label="edible
+(10)
+", weight=7]
+7 -> 9 [ label = ">0.50"];
+"10" [shape=box, style=filled, label="edible
+(48)
+", weight=5]
+4 -> 10 [ label = ">2.50"];
+"11" [shape=box, style=filled, label="poisonous
+(120)
+", weight=4]
+3 -> 11 [ label = ">6.50"];
+"12" [shape=box, style=filled, label="odor
+", weight=2]
+0 -> 12 [ label = ">2.50"];
+"13" [shape=box, style=filled, label="gill-spacing
+", weight=3]
+12 -> 13 [ label = "<=5.50"];
+"14" [shape=box, style=filled, label="poisonous
+(1417)
+", weight=4]
+13 -> 14 [ label = "<=0.50"];
+"15" [shape=box, style=filled, label="edible
+(20)
+", weight=4]
+13 -> 15 [ label = ">0.50"];
+"16" [shape=box, style=filled, label="stalk-shape
+", weight=3]
+12 -> 16 [ label = ">5.50"];
+"17" [shape=box, style=filled, label="population
+", weight=4]
+16 -> 17 [ label = "<=0.50"];
+"18" [shape=box, style=filled, label="gill-size
+", weight=5]
+17 -> 18 [ label = "<=3.50"];
+"19" [shape=box, style=filled, label="edible
+(265)
+", weight=6]
+18 -> 19 [ label = "<=0.50"];
+"20" [shape=box, style=filled, label="poisonous
+(7)
+", weight=6]
+18 -> 20 [ label = ">0.50"];
+"21" [shape=box, style=filled, label="stalk-surface-below-ring
+", weight=5]
+17 -> 21 [ label = ">3.50"];
+"22" [shape=box, style=filled, label="edible
+(39)
+", weight=6]
+21 -> 22 [ label = "<=0.50"];
+"23" [shape=box, style=filled, label="stalk-color-above-ring
+", weight=6]
+21 -> 23 [ label = ">0.50"];
+"24" [shape=box, style=filled, label="edible
+(29)
+", weight=7]
+23 -> 24 [ label = "<=5.50"];
+"25" [shape=box, style=filled, label="gill-color
+", weight=7]
+23 -> 25 [ label = ">5.50"];
+"26" [shape=box, style=filled, label="poisonous
+(30)
+", weight=8]
+25 -> 26 [ label = "<=7.50"];
+"27" [shape=box, style=filled, label="habitat
+", weight=8]
+25 -> 27 [ label = ">7.50"];
+"28" [shape=box, style=filled, label="cap-shape
+", weight=9]
+27 -> 28 [ label = "<=4.50"];
+"29" [shape=box, style=filled, label="poisonous
+(4)
+", weight=10]
+28 -> 29 [ label = "<=1.00"];
+"30" [shape=box, style=filled, label="cap-color
+", weight=10]
+28 -> 30 [ label = ">1.00"];
+"31" [shape=box, style=filled, label="bruises%3F
+", weight=11]
+30 -> 31 [ label = "<=6.50"];
+"32" [shape=box, style=filled, label="edible
+(9)
+", weight=12]
+31 -> 32 [ label = "<=0.50"];
+"33" [shape=box, style=filled, label="cap-surface
+", weight=12]
+31 -> 33 [ label = ">0.50"];
+"34" [shape=box, style=filled, label="edible
+(9/1)
+", weight=13]
+33 -> 34 [ label = "<=2.50"];
+"35" [shape=box, style=filled, label="edible
+(6/2)
+", weight=13]
+33 -> 35 [ label = ">2.50"];
+"36" [shape=box, style=filled, label="poisonous
+(1)
+", weight=11]
+30 -> 36 [ label = ">6.50"];
+"37" [shape=box, style=filled, label="poisonous
+(18)
+", weight=9]
+27 -> 37 [ label = ">4.50"];
+"38" [shape=box, style=filled, label="poisonous
+(300)
+", weight=4]
+16 -> 38 [ label = ">0.50"];
+{rank=same; 0;};
+{rank=same; 29;30;};
+{rank=same; 31;36;};
+{rank=same; 32;33;};
+{rank=same; 34;35;};
+{rank=same; 1;12;};
+{rank=same; 2;3;13;16;};
+{rank=same; 4;11;14;15;17;38;};
+{rank=same; 5;10;18;21;};
+{rank=same; 6;7;19;20;22;23;};
+{rank=same; 8;9;24;25;};
+{rank=same; 26;27;};
+{rank=same; 28;37;};
+}
